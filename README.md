@@ -25,3 +25,7 @@ A Ansible role that installs Snapraid from its current PPA on Ubuntu.
 ## License
 
 MIT
+
+
+
+[![Build Status](https://travis-ci.org/lonix/ansible-snapraid.svg?branch=master)](https://travis-ci.org/lonix/ansible-snapraid)
