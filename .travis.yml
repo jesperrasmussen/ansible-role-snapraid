@@ -16,7 +16,7 @@ install:
   - pip install ansible
 
   # Install Linter
-  - /travis-ci-linter/install.sh
+  - ./travis-ci-linter/install.sh
 
   # Check ansible version
   - ansible --version
@@ -28,7 +28,7 @@ script:
   # Check the role/playbook's syntax.
   - ansible-playbook -i tests/inventory tests/test.yml --syntax-check
   # Lint with travis-ci-linter
-  - /travis-ci-linter/build.sh
+  - ./travis-ci-linter/build.sh
 
   # Run the role/playbook with ansible-playbook.
   - ansible-playbook -i tests/inventory tests/test.yml -vvvv --connection=local
