@@ -8,5 +8,4 @@
 - name: Installing SnapRAID from PPA
   package:
     name: snapraid
-    state: latest
-    
+    state: present
