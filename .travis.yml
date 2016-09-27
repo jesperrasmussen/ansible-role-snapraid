@@ -30,7 +30,7 @@ script:
 
   # Lint
   - ./travis-ci-linter/run_lint.sh
-  
+
   # Run the role/playbook with ansible-playbook.
   - ansible-playbook -i tests/inventory tests/test.yml -vvvv --connection=local
 
